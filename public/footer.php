@@ -1,4 +1,3 @@
-
 <footer>
     <div class="footerPart">
         <p>Nos Partenaires </p>
@@ -9,24 +8,22 @@
             <li><a href="https://fr.openfoodfacts.org/marque/peche-ocean/marque/marque-repere" target="_BLANK">Pêche Océan</a></li>
         </ul>
     </div>
+
     <div class="footerReseaux">
         <div class="reseauSocial">
-        <a href="#" alt="notre Facebook"><i class="fab fa-facebook-square"></i></a>
-        </div>
-    
-        <div class="reseauSocial">
-        <a href="#" alt="notre twitter"><i class="fab fa-twitter-square"></i></a>
-            
+            <a href="#" alt="notre Facebook"><i class="fab fa-facebook-square"></i></a>
         </div>
         <div class="reseauSocial">
-        <a href="#" alt="notre instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" alt="notre twitter"><i class="fab fa-twitter-square"></i></a>        
+        </div>
+        <div class="reseauSocial">
+            <a href="#" alt="notre instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
+
     <div class="footerContact">
         <a class = "versContact"href="contact.php"  title="Contact" alt="go Contact">Nous contacter</a>
         <br/>
         <a class="versMention" href="#"  title="legalMention" alt="go Mention">©Mentions légales</a>
-
-
     </div>
 </footer>

@@ -1,24 +1,21 @@
 window.onscroll = function () {
-
-    if (document.documentElement.scrollTop > 100) {
-        document.getElementById("navbar").style.background="#63868c";
-        document.getElementById("navbar-right").style.paddingTop = "0px";      
-        document.getElementById("logo").style.display = "flex";
-        document.getElementById("navbar-right").style.color = "#63868c";
-        document.getElementById("navbar-right").style.display = "flex";
-        document.getElementById("navbar-right").style.alignItems = "alignItems";  
-    }
-    else if (document.documentElement.scrollTop < 200 ){
-      document.getElementById("navbar").style.background="none";
-      document.getElementById("navbar").style.paddingTop = "0";
-      document.getElementById("navul").style.paddingTop = "200";
-      document.getElementById("logo").style.display = "flex";
-      document.getElementById("navbar-right").style.color = "#63868C";
-      document.getElementById("navbar-right").style.display = "flex";
-      document.getElementById("navbar-right").style.alignItems = "alignItems";    }
-  
-  
+  if (document.documentElement.scrollTop > 100) {
+    document.getElementById("navbar").style.background="#63868c";
+    document.getElementById("navbar-right").style.paddingTop = "0px";      
+    document.getElementById("logo").style.display = "flex";
+    document.getElementById("navbar-right").style.color = "#63868c";
+    document.getElementById("navbar-right").style.display = "flex";
+    document.getElementById("navbar-right").style.alignItems = "alignItems";  
+    } else if (document.documentElement.scrollTop < 200 ){
+    document.getElementById("navbar").style.background="none";
+    document.getElementById("navbar").style.paddingTop = "0";
+    document.getElementById("navul").style.paddingTop = "200";
+    document.getElementById("logo").style.display = "flex";
+    document.getElementById("navbar-right").style.color = "#63868C";
+    document.getElementById("navbar-right").style.display = "flex";
+    document.getElementById("navbar-right").style.alignItems = "alignItems";
   }
+}
 
 const cards = document.querySelector(".cards");
 
@@ -42,7 +39,7 @@ const articles = [
 
 function createCard(title, imageUrl, linkUrl) {
   if(!cards) {
-    return
+    return null;
   }
   const card = document.createElement("div");
   card.classList.add("card");
@@ -75,18 +72,14 @@ function createCard(title, imageUrl, linkUrl) {
   cardButton.classList.add("card-button");
   cardButton.innerHTML = "Voir l'article";
   cardLink.appendChild(cardButton);
-
 }
 
 for (let i = 0; i < articles.length; i++) {
   createCard(articles[i].mytitle, articles[i].picture, articles[i].myLink);
 }
 
-
-
-
 for (var i = 0; i < document.links.length; i++) {
   if (document.links[i].href == document.URL) {
-      document.links[i].className = 'active';
+    document.links[i].className = 'active';
   }
 }

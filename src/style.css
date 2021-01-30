@@ -20,10 +20,12 @@ body {
     padding: 0;
 }
 
-h1{
+h1 {
     color: var(--main-color);
     font-family: var(--main-font);
-}h2, h3{
+}
+
+h2, h3 {
     color: var(--secondary-color);
     font-family: var(--main-font);
 }
@@ -33,596 +35,9 @@ p {
     font-size: 1em;
 }
 
-.h1{
+.h1 {
     display: none;
 }
-
-/*
-$$\   $$\ $$$$$$$$\  $$$$$$\  $$$$$$$\  $$$$$$$$\ $$$$$$$\
-$$ |  $$ |$$  _____|$$  __$$\ $$  __$$\ $$  _____|$$  __$$\
-$$ |  $$ |$$ |      $$ /  $$ |$$ |  $$ |$$ |      $$ |  $$ |
-$$$$$$$$ |$$$$$\    $$$$$$$$ |$$ |  $$ |$$$$$\    $$$$$$$  |
-$$  __$$ |$$  __|   $$  __$$ |$$ |  $$ |$$  __|   $$  __$$<
-$$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |      $$ |  $$ |
-$$ |  $$ |$$$$$$$$\ $$ |  $$ |$$$$$$$  |$$$$$$$$\ $$ |  $$ |
-\__|  \__|\________|\__|  \__|\_______/ \________|\__|  \__|
-*/
-
-#navbar {
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    height: 120px;
-    z-index: 100;
-    padding-bottom: 100px;
-    box-sizing: border-box;
-    }
-
-    body{
-    margin: 0;
-    font-family:var(--main-font);
-    
-}
-
-
-
-.toggler{
-    display: none;
-}
-
-.logo{
-    display: flex;
-    margin-left: 16px;
-}
-nav ul{
-    position: fixed;
-    width: 100%;
-    height: auto;
-    padding: 16px;
-    left :-111%;
-    transition:all 0.5s;
-    list-style: none;
-    background: #FFFFFF;
-    margin-top: 0px;
-    color:rgb(230, 69, 69);
-
-}
-
-
-nav li{
-    margin-bottom: 16px;
-    margin-left: 40px;
-}
-
-nav ul a{
-    text-decoration: none;
-    color:var(--main-color);
-    font-size: 30px;
-    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
-    text-transform: uppercase;
-    margin-top: 20px;
-    color:rgb(230, 69, 69);
-}
-
-nav a:hover{
-    color: #15C6E6;
-    transition: ease-in 0.1s;}
-    
-.toggler:checked ~ nav ul{
-    color: #FFFFFF;
-    transition: all 0.3s;
-    left:-9%;
-}
-
-
-.ifa{
-    color: #FFFFFF;
-}
-
-#toggler:checked ~ .menu-btn i:before{
-    content:"\f00d";
-}
-.menu-btn{
-    position : absolute;
-    font-size: 35px;
-    top: 0;
-    right:0;
-    margin-right:  16px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-a.active {
-    color: #15C6E6
-;
-}
-
-
-/*
-$$\   $$\  $$$$$$\  $$\      $$\ $$$$$$$$\
-$$ |  $$ |$$  __$$\ $$$\    $$$ |$$  _____|
-$$ |  $$ |$$ /  $$ |$$$$\  $$$$ |$$ |
-$$$$$$$$ |$$ |  $$ |$$\$$\$$ $$ |$$$$$\
-$$  __$$ |$$ |  $$ |$$ \$$$  $$ |$$  __|
-$$ |  $$ |$$ |  $$ |$$ |\$  /$$ |$$ |
-$$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
-\__|  \__| \______/ \__|     \__|\________|
-*/
-
-.video-home{
-    height: 100%;
-}.video-background{
-    width: 100%;
-    height: 100%;
-}.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}.card {
-    border-radius: 10px;
-    width: 200px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}.card-img {
-    border-radius: 10px 10px 0 0;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../src/img/Xbox.jpg);
-    height: 200px;
-    width: 100%;
-}.card-body {
-    padding: 10px 20px;
-}.card-body h4 {
-    margin: 10px 0px;
-    text-align: center;
-    font-size: 15px;
-    color: var(--third-color);
-    font-family: var(--secondary-font);
-}.card-button {
-    border: none;
-    border-radius: 10px;
-    height: 50px;
-    background-color: var(--fond-btn);
-    width: 100%;
-}#descr-homepage {
-    margin: 3% 5%;
-}
-
-/*____  __     __  ________  __    __  ________ 
-/        |/  |   /  |/        |/  \  /  |/        |
-$$$$$$$$/ $$ |   $$ |$$$$$$$$/ $$  \ $$ |$$$$$$$$/ 
-$$ |__    $$ |   $$ |$$ |__    $$$  \$$ |   $$ |   
-$$    |   $$  \ /$$/ $$    |   $$$$  $$ |   $$ |   
-$$$$$/     $$  /$$/  $$$$$/    $$ $$ $$ |   $$ |   
-$$ |_____   $$ $$/   $$ |_____ $$ |$$$$ |   $$ |   
-$$       |   $$$/    $$       |$$ | $$$ |   $$ |   
-$$$$$$$$/     $/     $$$$$$$$/ $$/   $$/    $$/    
-*/        
-.banner-event {
-    background: url('https://jeuvideo.afjv.com/press_1809/180918_fishing_5.jpg');
-    background-size: cover;
-    background-attachment: fixed;	
-    background-position: center;	
-    background-repeat: no-repeat;	
-    margin-bottom: var(--margin-bot-bann);
-}
-.banner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  height: 500px;
-  border-radius: 6px;
-}
-.title-background {
-    font-family: var(--main-font); 
-    border-radius: 5px;
-    padding: 10px 20px 10px 20px;
-    background-color: rgba(24,24,24,0.8);
-    color: var(--main-color);
-    font-size: 2em;
-    text-align: center;
-  }
-
-.flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.cardArticle {
-    border-radius: 10px;
-    width: 350px;
-    height: 775px;
-    margin: 20px;
-    display: flex;
-    flex-direction: line;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.cardPic {
-
-    border-radius: 10px 10px 0 0;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../src/img/montrealcompet.jpg);
-    height: 400px;
-    width: 100%;
-}
-.cardPicbis {
-    border-radius: 10px 10px 0 0;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../src/img/Zaou_1.jpg);
-    height: 400px;
-    width: 100%;
-  }
-.cardBodybis {
-    padding: 10px 20px;
-}
-.cardTitlebis {
-    margin: 10px 0px;
-    text-align: center;
-    font-size: 20px;
-    color: var(--third-color);
-    font-family: var(--secondary-font);
-}
-.cardButtonbis {
-    border: none;
-    border-radius: 10px;
-    height: 50px;
-    background-color: lightblue;
-    width: 100%;
-  }
-  
-  .cardTexte {
-    font-family: var(--secondary-font);
-    font-size: 18px;
-    text-align: justify;
-  }
-  
-
-
-/*
-$$$$$$$\  $$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\ $$$$$$$$\
-$$  __$$\ \_$$  _|$$  __$$\ $$  _____|$$  __$$\\__$$  __|
-$$ |  $$ |  $$ |  $$ |  $$ |$$ |      $$ /  \__|  $$ |
-$$ |  $$ |  $$ |  $$$$$$$  |$$$$$\    $$ |        $$ |
-$$ |  $$ |  $$ |  $$  __$$< $$  __|   $$ |        $$ |
-$$ |  $$ |  $$ |  $$ |  $$ |$$ |      $$ |  $$\   $$ |
-$$$$$$$  |$$$$$$\ $$ |  $$ |$$$$$$$$\ \$$$$$$  |  $$ |
-\_______/ \______|\__|  \__|\________| \______/   \__|
-*/
-
-#intro-stream {
-    text-align: center;
-    margin: 70px 20px 70px 20px;
-}
-#carp-icon {
-    height: 25px;
-    width: 25px;
-}
-#banner-stream {
-	background: url('../src/img/banner-stream2.png');
-	background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: var(--margin-bot-bann);
-}
-
-#banner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    height: 500px;
-	border-radius: 6px;
-}
-
-.banner-title {
-    font-family: var(--main-font), Arial, sans-serif;
-    border-radius: 5px;
-	padding: 10px 20px 10px 20px;
-	background-color: rgba(24,24,24,0.8);
-	color: var(--main-color);
-    font-size: 4em;
-    text-align: center;
-}
-
-
-.toggler{
-    display: none;
-}
-.logo{
-    display: flex;
-    margin-left: 16px;}
-
-#twitch-embed {
-    text-align: center;
-    margin-bottom : 20px;
-}
-
-/* ------------------------------- footer style -----------------------------*/
-
-footer{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-family:var(--main-font);
-}
-footer div{
-    padding-bottom: 2%;
-}
-.footerPart{
-    background-color: #303030;
-    padding-top: 1em;
-    padding-bottom: 1.6em;
-}
-.footerReseaux{
-    display: flex;
-    width: 100%;
-    background-color: #CD5C5C;
-    padding-top: 1em;
-}
-.footerReseaux div{
-    width: 33%;
-    margin-right: 0;
-}
-.footerReseaux div a i{
-    text-decoration: none;
-    color:white;
-    font-size: 2em;
-}
-.footerReseaux div a i:hover{
-    color: #303030;
-}
-.footerContact{
-    background-color: #CD5C5C;
-}
-.footerContact a{
-    text-decoration: none;
-    color:white;
-}
-.footerContact a:hover{
-    color: #303030;
-}
-.footerPart p{
-    font-size: 1.3em;
-    font-family:var(--main-font);
-}
-.footerPart ul{
-    padding:0;
-}
-.footerPart p, .footerPart ul li{
-    margin: 2%;
-    list-style-type: none ;
-    color:white;
-}
-.footerPart ul li a{
-    text-decoration: none;
-    color:white;
-}
-.footerPart ul li a:hover{
-    color: #FA8072 ;
-}
-.footerPart p,.footerPart ul li, .footerContact .versContact{
-    font-weight: bold;
-}
-.footerContact .versMention{
-    font-size: small;
-}
-
-/*
-$$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\  $$$$$$\   $$$$$$\ $$$$$$$$\
-$$  __$$\ $$  __$$\ $$$\  $$ |\__$$  __|$$  __$$\ $$  __$$\\__$$  __|
-$$ /  \__|$$ /  $$ |$$$$\ $$ |   $$ |   $$ /  $$ |$$ /  \__|  $$ |
-$$ |      $$ |  $$ |$$ $$\$$ |   $$ |   $$$$$$$$ |$$ |        $$ |
-$$ |      $$ |  $$ |$$ \$$$$ |   $$ |   $$  __$$ |$$ |        $$ |
-$$ |  $$\ $$ |  $$ |$$ |\$$$ |   $$ |   $$ |  $$ |$$ |  $$\   $$ |
-\$$$$$$  | $$$$$$  |$$ | \$$ |   $$ |   $$ |  $$ |\$$$$$$  |  $$ |
-\______/  \______/ \__|  \__|   \__|   \__|  \__| \______/   \__|
-*/
-
-.contactForm form{
-    text-align: center;
-}
-
-.contactForm form{
-    padding-top: 3em;
-}
-
-.parallaxContact{
-    /* The image used */
-    background-image: url("../src/img/pecheur-contact.gif");        /* Set a specific height */
-    height: 500px;        /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;        
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contactForm .contactTitle{
-    background-color: rgba(24,24,24, 0.8);
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-}
-.contactForm div h1{
-    text-align: center;
-    color: #FA8072;
-    font-family: "Bangers", cursive;
-}
-.contactForm form .button button{
-    font-size: 1.5em;
-}
-.contactForm form div{
-    margin-top: 1em;
-    font-family: "Bangers", cursive;
-}
-
-.contactForm form textarea, .contactForm form input{
-    width : 90%;
-    margin: 0;
-    border-radius: 0px;
-    box-shadow: none;
-
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
-.contactForm form input{
-    height: 2em;
-}
-
-/*EEEEEEEEEEEEEEEEEEEEEE     QQQQQQQQQ     UUUUUUUU     UUUUUUUUIIIIIIIIIIPPPPPPPPPPPPPPPPP   EEEEEEEEEEEEEEEEEEEEEE
-E::::::::::::::::::::E   QQ:::::::::QQ   U::::::U     U::::::UI::::::::IP::::::::::::::::P  E::::::::::::::::::::E
-E::::::::::::::::::::E QQ:::::::::::::QQ U::::::U     U::::::UI::::::::IP::::::PPPPPP:::::P E::::::::::::::::::::E
-EE::::::EEEEEEEEE::::EQ:::::::QQQ:::::::QUU:::::U     U:::::UUII::::::IIPP:::::P     P:::::PEE::::::EEEEEEEEE::::E
-  E:::::E       EEEEEEQ::::::O   Q::::::Q U:::::U     U:::::U   I::::I    P::::P     P:::::P  E:::::E       EEEEEE
-  E:::::E             Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::P     P:::::P  E:::::E
-  E::::::EEEEEEEEEE   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::PPPPPP:::::P   E::::::EEEEEEEEEE
-  E:::::::::::::::E   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P:::::::::::::PP    E:::::::::::::::E
-  E:::::::::::::::E   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::PPPPPPPPP      E:::::::::::::::E
-  E::::::EEEEEEEEEE   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::P              E::::::EEEEEEEEEE
-  E:::::E             Q:::::O  QQQQ:::::Q U:::::D     D:::::U   I::::I    P::::P              E:::::E
-  E:::::E       EEEEEEQ::::::O Q::::::::Q U::::::U   U::::::U   I::::I    P::::P              E:::::E       EEEEEE
-EE::::::EEEEEEEE:::::EQ:::::::QQ::::::::Q U:::::::UUU:::::::U II::::::IIPP::::::PP          EE::::::EEEEEEEE:::::E
-E::::::::::::::::::::E QQ::::::::::::::Q   UU:::::::::::::UU  I::::::::IP::::::::P          E::::::::::::::::::::E
-E::::::::::::::::::::E   QQ:::::::::::Q      UU:::::::::UU    I::::::::IP::::::::P          E::::::::::::::::::::E
-EEEEEEEEEEEEEEEEEEEEEE     QQQQQQQQ::::QQ      UUUUUUUUU      IIIIIIIIIIPPPPPPPPPP          EEEEEEEEEEEEEEEEEEEEEE
-                                   Q:::::Q
-                                    QQQQQQ        */
-
-
-/*-------------------------- mobile team ---------------------------------*/
-
-
-
-
-                                    /* COVER EN PARALLAX AVEC TITRE */
-
-.parallax-team {
-
-    /* The image used */
-    background-image: url("../src/img/cover-team3.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-                               /* POLICES DE TITRES ET DE PARAGRAPHES */
-
-
-p, form {
-    font-family:'Quicksand', sans-serif ;
-    color: #303030;
-}
-
-.quote {
-    font-style: italic;
-}
-
-.title-background {
-    background-color: rgba(24,24,24, 0.8);
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-}
-
-
-                                      /* GRIDS ET BOX MODELS */
-
-.team-players {
-    text-align: center;
-    margin: 0% 5%;
-}
-
-.profile-image {
-    border: none;
-    width: 100%;
-    height: 50%;
-}
-
-.partition {
-    border-top : solid 0.5px #303030;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.box-michael, .box-therese, .box-richard {
-    padding-top: 5%;
-    background-color: white;
-}
-
-                                            /* FORMULAIRE */
-
-.join-us {
-    padding-top: 5%;
-    text-align: center;
-    background-color: lightgray;
-}
-
-.user-name, .user-email, .submit-button  {
-    padding : 1% 0%;
-}
-
-.submit-button {
-    margin: 2%;
-    font-family: "Bangers", cursive;
-    color: white;
-    background-color:#303030;
-    padding: 2px 10px;
-    font-size: 1.5em;
-}
-
-.contactForm .button button:hover{
-      background-color: rgb(85, 39, 39);
-}
-
-.contactForm label{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.mapping {
-    text-align: center;
-}
-
-/*
-$$$$$$\  $$\   $$\  $$$$$$\  $$$$$$$\
-$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\
-$$ /  \__|$$ |  $$ |$$ /  $$ |$$ |  $$ |
-\$$$$$$\  $$$$$$$$ |$$ |  $$ |$$$$$$$  |
-\____$$\ $$  __$$ |$$ |  $$ |$$  ____/
-$$\   $$ |$$ |  $$ |$$ |  $$ |$$ |
-\$$$$$$  |$$ |  $$ | $$$$$$  |$$ |
-\______/ \__|  \__| \______/ \__|
-*/
-
-.parallax-boutique {        /* The image used */
-    background-image: url("../src/img/cover-shop4.jpg");        /* Set a specific height */
-    height: 500px;        /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;        display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* POLICES DE TITRES ET DE PARAGRAPHES */
 
 h3 {
     color: var(--title-articleshop);
@@ -642,13 +57,12 @@ p, form {
     padding: 10px 15px 10px 15px;
 }
 
-                           /* GRIDS ET BOX MODELS */
+/* GRIDS ET BOX MODELS */
 
 form {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
     margin-top: 5%;
-    
 }
 
 .button-shop {
@@ -679,18 +93,629 @@ grid-auto-rows: minmax(100px, auto);
 margin-bottom :20px;
 }
 
+/*
+$$\   $$\ $$$$$$$$\  $$$$$$\  $$$$$$$\  $$$$$$$$\ $$$$$$$\
+$$ |  $$ |$$  _____|$$  __$$\ $$  __$$\ $$  _____|$$  __$$\
+$$ |  $$ |$$ |      $$ /  $$ |$$ |  $$ |$$ |      $$ |  $$ |
+$$$$$$$$ |$$$$$\    $$$$$$$$ |$$ |  $$ |$$$$$\    $$$$$$$  |
+$$  __$$ |$$  __|   $$  __$$ |$$ |  $$ |$$  __|   $$  __$$<
+$$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |      $$ |  $$ |
+$$ |  $$ |$$$$$$$$\ $$ |  $$ |$$$$$$$  |$$$$$$$$\ $$ |  $$ |
+\__|  \__|\________|\__|  \__|\_______/ \________|\__|  \__|
+*/
 
-/*375*/
+#navbar {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index: 100;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:var(--main-font);  
+}
+
+.toggler {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    margin-left: 16px;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    left :-111%;
+    transition:all 0.5s;
+    list-style: none;
+    background: #FFFFFF;
+    margin-top: 0px;
+    color:rgb(230, 69, 69);
+}
+
+
+nav li {
+    margin-bottom: 16px;
+    margin-left: 40px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color:var(--main-color);
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+    text-transform: uppercase;
+    margin-top: 20px;
+    color:rgb(230, 69, 69);
+}
+
+nav a:hover {
+    color: #15C6E6;
+    transition: ease-in 0.1s;}
+    
+.toggler:checked ~ nav ul {
+    color: #FFFFFF;
+    transition: all 0.3s;
+    left:-9%;
+}
+
+.ifa {
+    color: #FFFFFF;
+}
+
+#toggler:checked ~ .menu-btn i:before {
+    content:"\f00d";
+}
+
+.menu-btn {
+    position: absolute;
+    font-size: 35px;
+    top: 0;
+    right:0;
+    margin-right:  16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a.active {
+    color: #15C6E6;
+}
+
+
+/*
+$$\   $$\  $$$$$$\  $$\      $$\ $$$$$$$$\
+$$ |  $$ |$$  __$$\ $$$\    $$$ |$$  _____|
+$$ |  $$ |$$ /  $$ |$$$$\  $$$$ |$$ |
+$$$$$$$$ |$$ |  $$ |$$\$$\$$ $$ |$$$$$\
+$$  __$$ |$$ |  $$ |$$ \$$$  $$ |$$  __|
+$$ |  $$ |$$ |  $$ |$$ |\$  /$$ |$$ |
+$$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
+\__|  \__| \______/ \__|     \__|\________|
+*/
+
+.video-home {
+    height: 100%;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../src/img/Xbox.jpg);
+    height: 200px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-body h4 {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--third-color);
+    font-family: var(--secondary-font);
+}
+
+.card-button {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    background-color: var(--fond-btn);
+    width: 100%;
+}
+
+#descr-homepage {
+    margin: 3% 5%;
+}
+
+/*____  __     __  ________  __    __  ________ 
+/        |/  |   /  |/        |/  \  /  |/        |
+$$$$$$$$/ $$ |   $$ |$$$$$$$$/ $$  \ $$ |$$$$$$$$/ 
+$$ |__    $$ |   $$ |$$ |__    $$$  \$$ |   $$ |   
+$$    |   $$  \ /$$/ $$    |   $$$$  $$ |   $$ |   
+$$$$$/     $$  /$$/  $$$$$/    $$ $$ $$ |   $$ |   
+$$ |_____   $$ $$/   $$ |_____ $$ |$$$$ |   $$ |   
+$$       |   $$$/    $$       |$$ | $$$ |   $$ |   
+$$$$$$$$/     $/     $$$$$$$$/ $$/   $$/    $$/    
+*/
+
+.banner-event {
+    background: url('https://jeuvideo.afjv.com/press_1809/180918_fishing_5.jpg');
+    background-size: cover;
+    background-attachment: fixed;	
+    background-position: center;	
+    background-repeat: no-repeat;	
+    margin-bottom: var(--margin-bot-bann);
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 500px;
+    border-radius: 6px;
+}
+
+.title-background {
+    font-family: var(--main-font); 
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(24,24,24,0.8);
+    color: var(--main-color);
+    font-size: 2em;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardArticle {
+    border-radius: 10px;
+    width: 350px;
+    height: 775px;
+    margin: 20px;
+    display: flex;
+    flex-direction: line;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cardPic {
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../src/img/montrealcompet.jpg);
+    height: 400px;
+    width: 100%;
+}
+
+.cardPicbis {
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../src/img/Zaou_1.jpg);
+    height: 400px;
+    width: 100%;
+}
+
+.cardBodybis {
+    padding: 10px 20px;
+}
+
+.cardTitlebis {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--third-color);
+    font-family: var(--secondary-font);
+}
+
+.cardButtonbis {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    background-color: lightblue;
+    width: 100%;
+  }
+  
+.cardTexte {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    text-align: justify;
+}
+  
+
+
+/*
+$$$$$$$\  $$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\ $$$$$$$$\
+$$  __$$\ \_$$  _|$$  __$$\ $$  _____|$$  __$$\\__$$  __|
+$$ |  $$ |  $$ |  $$ |  $$ |$$ |      $$ /  \__|  $$ |
+$$ |  $$ |  $$ |  $$$$$$$  |$$$$$\    $$ |        $$ |
+$$ |  $$ |  $$ |  $$  __$$< $$  __|   $$ |        $$ |
+$$ |  $$ |  $$ |  $$ |  $$ |$$ |      $$ |  $$\   $$ |
+$$$$$$$  |$$$$$$\ $$ |  $$ |$$$$$$$$\ \$$$$$$  |  $$ |
+\_______/ \______|\__|  \__|\________| \______/   \__|
+*/
+
+#intro-stream {
+    text-align: center;
+    margin: 70px 20px 70px 20px;
+}
+
+#carp-icon {
+    height: 25px;
+    width: 25px;
+}
+
+#banner-stream {
+	background: url('../src/img/banner-stream2.png');
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: var(--margin-bot-bann);
+}
+
+#banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 500px;
+	border-radius: 6px;
+}
+
+.banner-title {
+    font-family: var(--main-font), Arial, sans-serif;
+    border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(24,24,24,0.8);
+	color: var(--main-color);
+    font-size: 4em;
+    text-align: center;
+}
+
+.toggler {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    margin-left: 16px;
+}
+
+#twitch-embed {
+    text-align: center;
+    margin-bottom : 20px;
+}
+
+/* ------------------------------- footer style -----------------------------*/
+
+footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family:var(--main-font);
+}
+
+footer div {
+    padding-bottom: 2%;
+}
+
+.footerPart {
+    background-color: #303030;
+    padding-top: 1em;
+    padding-bottom: 1.6em;
+}
+
+.footerReseaux {
+    display: flex;
+    width: 100%;
+    background-color: #CD5C5C;
+    padding-top: 1em;
+}
+
+.footerReseaux div {
+    width: 33%;
+    margin-right: 0;
+}
+
+.footerReseaux div a i {
+    text-decoration: none;
+    color:white;
+    font-size: 2em;
+}
+
+.footerReseaux div a i:hover {
+    color: #303030;
+}
+
+.footerContact {
+    background-color: #CD5C5C;
+}
+
+.footerContact a {
+    text-decoration: none;
+    color:white;
+}
+
+.footerContact a:hover {
+    color: #303030;
+}
+
+.footerPart p {
+    font-size: 1.3em;
+    font-family:var(--main-font);
+}
+
+.footerPart ul {
+    padding:0;
+}
+
+.footerPart p, .footerPart ul li {
+    margin: 2%;
+    list-style-type: none ;
+    color:white;
+}
+
+.footerPart ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.footerPart ul li a:hover {
+    color: #FA8072 ;
+}
+
+.footerPart p,.footerPart ul li, .footerContact .versContact {
+    font-weight: bold;
+}
+
+.footerContact .versMention {
+    font-size: small;
+}
+
+/*
+$$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\  $$$$$$\   $$$$$$\ $$$$$$$$\
+$$  __$$\ $$  __$$\ $$$\  $$ |\__$$  __|$$  __$$\ $$  __$$\\__$$  __|
+$$ /  \__|$$ /  $$ |$$$$\ $$ |   $$ |   $$ /  $$ |$$ /  \__|  $$ |
+$$ |      $$ |  $$ |$$ $$\$$ |   $$ |   $$$$$$$$ |$$ |        $$ |
+$$ |      $$ |  $$ |$$ \$$$$ |   $$ |   $$  __$$ |$$ |        $$ |
+$$ |  $$\ $$ |  $$ |$$ |\$$$ |   $$ |   $$ |  $$ |$$ |  $$\   $$ |
+\$$$$$$  | $$$$$$  |$$ | \$$ |   $$ |   $$ |  $$ |\$$$$$$  |  $$ |
+\______/  \______/ \__|  \__|   \__|   \__|  \__| \______/   \__|
+*/
+
+.contactForm form {
+    text-align: center;
+}
+
+.contactForm form {
+    padding-top: 3em;
+}
+
+.parallaxContact {
+    background-image: url("../src/img/pecheur-contact.gif");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm .contactTitle {
+    background-color: rgba(24,24,24, 0.8);
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+.contactForm div h1 {
+    text-align: center;
+    color: #FA8072;
+    font-family: "Bangers", cursive;
+}
+
+.contactForm form .button button {
+    font-size: 1.5em;
+}
+
+.contactForm form div {
+    margin-top: 1em;
+    font-family: "Bangers", cursive;
+}
+
+.contactForm form textarea, .contactForm form input {
+    width : 90%;
+    margin: 0;
+    border-radius: 0px;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-bsox-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contactForm form input {
+    height: 2em;
+}
+
+/*EEEEEEEEEEEEEEEEEEEEEE     QQQQQQQQQ     UUUUUUUU     UUUUUUUUIIIIIIIIIIPPPPPPPPPPPPPPPPP   EEEEEEEEEEEEEEEEEEEEEE
+E::::::::::::::::::::E   QQ:::::::::QQ   U::::::U     U::::::UI::::::::IP::::::::::::::::P  E::::::::::::::::::::E
+E::::::::::::::::::::E QQ:::::::::::::QQ U::::::U     U::::::UI::::::::IP::::::PPPPPP:::::P E::::::::::::::::::::E
+EE::::::EEEEEEEEE::::EQ:::::::QQQ:::::::QUU:::::U     U:::::UUII::::::IIPP:::::P     P:::::PEE::::::EEEEEEEEE::::E
+  E:::::E       EEEEEEQ::::::O   Q::::::Q U:::::U     U:::::U   I::::I    P::::P     P:::::P  E:::::E       EEEEEE
+  E:::::E             Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::P     P:::::P  E:::::E
+  E::::::EEEEEEEEEE   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::PPPPPP:::::P   E::::::EEEEEEEEEE
+  E:::::::::::::::E   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P:::::::::::::PP    E:::::::::::::::E
+  E:::::::::::::::E   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::PPPPPPPPP      E:::::::::::::::E
+  E::::::EEEEEEEEEE   Q:::::O     Q:::::Q U:::::D     D:::::U   I::::I    P::::P              E::::::EEEEEEEEEE
+  E:::::E             Q:::::O  QQQQ:::::Q U:::::D     D:::::U   I::::I    P::::P              E:::::E
+  E:::::E       EEEEEEQ::::::O Q::::::::Q U::::::U   U::::::U   I::::I    P::::P              E:::::E       EEEEEE
+EE::::::EEEEEEEE:::::EQ:::::::QQ::::::::Q U:::::::UUU:::::::U II::::::IIPP::::::PP          EE::::::EEEEEEEE:::::E
+E::::::::::::::::::::E QQ::::::::::::::Q   UU:::::::::::::UU  I::::::::IP::::::::P          E::::::::::::::::::::E
+E::::::::::::::::::::E   QQ:::::::::::Q      UU:::::::::UU    I::::::::IP::::::::P          E::::::::::::::::::::E
+EEEEEEEEEEEEEEEEEEEEEE     QQQQQQQQ::::QQ      UUUUUUUUU      IIIIIIIIIIPPPPPPPPPP          EEEEEEEEEEEEEEEEEEEEEE
+                                   Q:::::Q
+                                    QQQQQQ        */
+
+
+/*-------------------------- mobile team ---------------------------------*/
+/* COVER EN PARALLAX AVEC TITRE */
+
+.parallax-team {
+    background-image: url("../src/img/cover-team3.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* POLICES DE TITRES ET DE PARAGRAPHES */
+p, form {
+    font-family:'Quicksand', sans-serif ;
+    color: #303030;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.title-background {
+    background-color: rgba(24,24,24, 0.8);
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+/* GRIDS ET BOX MODELS */
+.team-players {
+    text-align: center;
+    margin: 0% 5%;
+}
+
+.profile-image {
+    border: none;
+    width: 100%;
+    height: 50%;
+}
+
+.partition {
+    border-top : solid 0.5px #303030;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.box-michael, .box-therese, .box-richard {
+    padding-top: 5%;
+    background-color: white;
+}
+
+/* FORMULAIRE */
+.join-us {
+    padding-top: 5%;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.user-name, .user-email, .submit-button {
+    padding : 1% 0%;
+}
+
+.submit-button {
+    margin: 2%;
+    font-family: "Bangers", cursive;
+    color: white;
+    background-color:#303030;
+    padding: 2px 10px;
+    font-size: 1.5em;
+}
+
+.contactForm .button button:hover {
+      background-color: rgb(85, 39, 39);
+}
+
+.contactForm label {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.mapping {
+    text-align: center;
+}
+
+/*
+$$$$$$\  $$\   $$\  $$$$$$\  $$$$$$$\
+$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\
+$$ /  \__|$$ |  $$ |$$ /  $$ |$$ |  $$ |
+\$$$$$$\  $$$$$$$$ |$$ |  $$ |$$$$$$$  |
+\____$$\ $$  __$$ |$$ |  $$ |$$  ____/
+$$\   $$ |$$ |  $$ |$$ |  $$ |$$ |
+\$$$$$$  |$$ |  $$ | $$$$$$  |$$ |
+\______/ \__|  \__| \______/ \__|
+*/
+
+.parallax-boutique {
+    background-image: url("../src/img/cover-shop4.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 376px){
     /*------------------------------------ header desktop ------------------------------*/
-    .menu-btn{
+    .menu-btn {
         display: none;
     }
-    header{
+    
+    header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(380px, 3fr);    }
+        grid-template-columns: 1fr auto minmax(380px, 3fr);
+    }
 
-        nav{
+    nav {
         display: flex;
         grid-column: 3/4;
         justify-content: flex-end;
@@ -698,7 +723,7 @@ margin-bottom :20px;
         margin-right: 30px;
     }
 
-    nav ul{
+    nav ul {
         all: unset;
         list-style: none;
         display: flex;
@@ -706,78 +731,84 @@ margin-bottom :20px;
     }
 
 /*------------------------------------ Footer Desktop ------------------------------*/
-    footer{
+    footer {
         display: flex;
         width: 100%;
         background: linear-gradient(130deg, #303030 40%,  #CD5C5C 40%);
     }
-    .footerPart{
+
+    .footerPart {
         width: 40%;
         background-color: transparent;
     }
-    .footerPart ul{
+
+    .footerPart ul {
         display: flex;
     }
-    .footerPart ul li{
+
+    .footerPart ul li {
         width: 60%;
     }
-    .footerReseaux{
+
+    .footerReseaux {
         width: 25%;
         padding-left: 4em;
         padding-top: 3.6em;
         background-color: transparent;
     }
-    .footerContact{
+
+    .footerContact {
         width: 33%;
         padding-top: 3.4em;
         background-color: transparent;
     }
-    .footerContact .versContact{
+
+    .footerContact .versContact {
         padding-bottom: 0.2em;
         font-size: 1.5em;
     }
-    .footerReseaux .reseauSocial{
+
+    .footerReseaux .reseauSocial {
         width: 20%;
     }
-    .footerReseaux div a i{
+
+    .footerReseaux div a i {
         font-size: 3em;
     }
-
-
+s
 /*----------------------------------- Contact Desktop --------------------------------------*/
 
-    .contactForm{
+    .contactForm {
         margin-bottom: 2%;
     }
 
-    .contactForm form{
+    .contactForm form {
         box-shadow: none;
     }
 
-    .contactForm form textarea, .contactForm form input{
+    .contactForm form textarea, .contactForm form input {
         width : 40%;
     }
-    .contactForm form label{
+
+    .contactForm form label {
         font-size: 1.5em;
     }
-    .contactForm div h1{
+
+    .contactForm div h1 {
         font-family: "Bangers", cursive;
     }
 
-    .parallaxContact{
-        /* The image used */
-        background-image: url("../src/img/pecheur-contact-desktop.gif");        /* Set a specific height */
-              /* Create the parallax scrolling effect */
+    .parallaxContact {
+        background-image: url("../src/img/pecheur-contact-desktop.gif");
         background-attachment: fixed;
         background-position: bottom;
         background-repeat: no-repeat;
-        background-size: cover;        display: flex;
+        background-size: cover;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 30px;
-
     }
-
 
 /*---------------------------- team desktop ----------------------------*/
 
@@ -804,7 +835,7 @@ margin-bottom :20px;
         margin: 5% 0;
     }
 
-    .mapping{
+    .mapping {
         height: 180px;
         width: 100%;
         margin-top: 3%;
@@ -821,10 +852,10 @@ margin-bottom :20px;
         grid-template-columns: repeat(4, 1fr);
         padding-left: 10%;
         padding-right: 10%;
-        }
+    }
+
 /*------------------------------------------ PAGE EVENT desktop --------------------------------------*/
     .flex {
-            justify-content: space-around;
-        }
-
+        justify-content: space-around;
+    }
 }
